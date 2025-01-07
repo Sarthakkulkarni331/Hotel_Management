@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SK's Home</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section id="home" class="dashboard">
+        <h2 style="color: rgb(216, 207, 207);">Welcome to Sk's Home</h2>
+        <p>''Your comfort is our priority. Book your stay with us today!''</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Experience luxury and comfort at our hotel, located in the heart of the city.</p>
+    </section>
+
+    <section id="reservations">
+        
+            <h2>Reservations</h2>
+            <form id="reservation-form" action="thnks.html" method="POST">
+
+                <table class="reservation-table">
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="check-in">Check-in Date:</label></td>
+                        <td><input type="date" id="check-in" name="check-in" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="room-type">Room Type:</label></td>
+                        <td>
+                            <select id="room-type" name="room-type" required>
+                                <option value="single">Single</option>
+                                <option value="double">Double</option>
+                                <option value="suite">Suite</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-card">
+            <h3>Single Room</h3>
+            <p>$100 per Day</p>
+        </div>
+        <div class="pricing-card">
+            <h3>Double Room</h3>
+            <p>$150 per Day</p>
+        </div>
+        <div class="pricing-card">
+            <h3>Suite</h3>
+            <p>$300 per Day</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@sk'shome.com</p>
+        <p>Phone: +91 7875336821</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sk's Home. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
